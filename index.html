@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="zxx">
 
 <head>
@@ -53,8 +53,8 @@
               About Us
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" target="_blank" href="life@gwc.html">Life@GWC</a>
-              <a class="dropdown-item" target="_blan" href="about.html#team">Team</a>
+              <a class="dropdown-item"  href="life@gwc.html">Life@GWC</a>
+              <a class="dropdown-item" href="about.html#team">Team</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -62,8 +62,9 @@
               Partners
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" target="_blank" href="domo.html">DOMO</a>
-              <a class="dropdown-item" target="_blan" href="zoho-analytics.html">Zoho Analytics</a>
+              <a class="dropdown-item"  href="domo.html">DOMO</a>
+              <a class="dropdown-item" href="zoho-analytics.html">Zoho Analytics</a>
+              <a class="dropdown-item" href="snowflake.html">Snowflake</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -71,8 +72,8 @@
               Resourses
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" target="_blank" href="case-studies.html">Case Studies</a>
-              <a class="dropdown-item" target="_blan" href="blog.html">Blogs</a>
+              <a class="dropdown-item"  href="case-studies.html">Case Studies</a>
+              <a class="dropdown-item" href="blog.html">Blogs</a>
             </div>
           </li>
           <li class="nav-item">
@@ -251,6 +252,18 @@
         </div>
       </div>
 
+      <!-- feature item -->
+      <div class="col-md-4 mb-80">
+        <div class="d-flex feature-item">
+          <div>
+            <i class="feature-icon mr-4"><img src="images/Icons/snowflake.png" alt=""></i>
+          </div>
+          <div>
+            <h4>Snowflake</h4>
+            <a href="snowflake.html">Learn More </a>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -281,7 +294,7 @@
             
             <div class="align-self-center">
               <h4>Reimaging customer loyalty using Looker Platform</h4>
-              <h6 class="text-color">Naveen, Founder & CEO, GWC</h6>
+              <!-- <h6 class="text-color">Naveen, Founder & CEO, GWC</h6> -->
             </div>
           </div>
           <a href="blog-details.html">Know More ></a>
@@ -294,7 +307,7 @@
         
             <div class="align-self-center">
               <h4>Platform to Simplify Reporting</h4>
-              <h6 class="text-color">Programmer</h6>
+              <!-- <h6 class="text-color">Programmer</h6> -->
             </div>
           </div>
           <a href="blog-details.html">Know More</a>
@@ -305,7 +318,7 @@
       
             <div class="align-self-center">
               <h4>Business Intelligence Solutions for Leading Automobile</h4>
-              <h6 class="text-color">Programmer</h6>
+              <!-- <h6 class="text-color">Programmer</h6> -->
             </div>
           </div>
           <a href="blog-details.html">Know More</a>
@@ -316,7 +329,7 @@
       
             <div class="align-self-center">
               <h4>Business Intelligence Solutions for Leading Automobile</h4>
-              <h6 class="text-color">Programmer</h6>
+              <!-- <h6 class="text-color">Programmer</h6> -->
             </div>
           </div>
           <a href="blog-details.html">Know More</a>
@@ -440,10 +453,10 @@
         <p class="mb-5">Receive updates, Events & Newsletters</p>
       </div>
       <div class="col-lg-8 col-sm-10 col-12 mx-auto">
-        <form action="#">
+        <form action="newsletter.php" method="post">
           <div class="input-wrapper position-relative">
-            <input type="email" class="newsletter-form" id="newsletter" placeholder="Enter your email">
-            <button type="submit" value="send" class="btn newsletter-btn">subscribe</button>
+            <input type="text" class="newsletter-form" id="newsletter" name="email" placeholder="Enter your email">
+            <button type="submit" value="send" class="btn newsletter-btn" name="submit">subscribe</button>
           </div>
         </form>
       </div>

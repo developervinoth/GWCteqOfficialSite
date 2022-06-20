@@ -53,8 +53,8 @@
               About Us
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" target="_blank" href="life@gwc.html">Life@GWC</a>
-              <a class="dropdown-item" target="_blan" href="about.html#team">Team</a>
+              <a class="dropdown-item"  href="life@gwc.html">Life@GWC</a>
+              <a class="dropdown-item"  href="about.html#team">Team</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -62,8 +62,9 @@
               Partners
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" target="_blank" href="domo.html">DOMO</a>
-              <a class="dropdown-item" target="_blan" href="zoho-analytics.html">Zoho Analytics</a>
+              <a class="dropdown-item"  href="domo.html">DOMO</a>
+              <a class="dropdown-item"  href="zoho-analytics.html">Zoho Analytics</a>
+              <a class="dropdown-item"  href="snowflake.html">Snowflake</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -71,8 +72,8 @@
               Resourses
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" target="_blank" href="case-studies.html">Case Studies</a>
-              <a class="dropdown-item" target="_blan" href="blog.html">Blogs</a>
+              <a class="dropdown-item"  href="case-studies.html">Case Studies</a>
+              <a class="dropdown-item"  href="blog.html">Blogs</a>
             </div>
           </li>
           <li class="nav-item">
@@ -119,7 +120,7 @@
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div>
-                                                        <h5 class="f-18"><a href="#" class="text-dark">Snowflake Developer</a></h5>
+                                                        <h5 class="f-18"><a href="job-description.html" class="text-dark">Snowflake Developer</a></h5>
                                                         <p class="text-muted mb-0">GWC Technologies pvt.Ltd</p>
                                                     </div>
                                                 </div>
@@ -166,7 +167,7 @@
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div>
-                                                        <h5 class="f-18"><a href="#" class="text-dark">Power BI Developer</a></h5>
+                                                        <h5 class="f-18"><a href="job-description.html" class="text-dark">Power BI Developer</a></h5>
                                                         <p class="text-muted mb-0">GWC Technologies pvt.Ltd</p>
                                                     </div>
                                                 </div>
@@ -213,7 +214,7 @@
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div>
-                                                        <h5 class="f-18"><a href="#" class="text-dark">Dell Boomi Developer</a></h5>
+                                                        <h5 class="f-18"><a href="job-description.html" class="text-dark">Dell Boomi Developer</a></h5>
                                                         <p class="text-muted mb-0">GWC Technologies pvt.Ltd</p>
                                                     </div>
                                                 </div>
@@ -260,7 +261,7 @@
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div>
-                                                        <h5 class="f-18"><a href="#" class="text-dark">Looker BI Developer</a></h5>
+                                                        <h5 class="f-18"><a href="job-description.html" class="text-dark">Looker BI Developer</a></h5>
                                                         <p class="text-muted mb-0">GWC Technologies pvt.Ltd</p>
                                                     </div>
                                                 </div>
@@ -307,7 +308,7 @@
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div>
-                                                        <h5 class="f-18"><a href="#" class="text-dark">Data Scientist</a></h5>
+                                                        <h5 class="f-18"><a href="job-description.html" class="text-dark">Data Scientist</a></h5>
                                                         <p class="text-muted mb-0">GWC Technologies pvt.Ltd</p>
                                                     </div>
                                                 </div>
@@ -354,7 +355,7 @@
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div>
-                                                        <h5 class="f-18"><a href="#" class="text-dark">Databricks Engineer</a></h5>
+                                                        <h5 class="f-18"><a href="job-description.html" class="text-dark">Databricks Engineer</a></h5>
                                                         <p class="text-muted mb-0">GWC Technologies pvt.Ltd</p>
                                                     </div>
                                                 </div>
@@ -396,8 +397,8 @@
                           </div>
                           </section>
 
-                          <!-- newsletter -->
-<section class="newsletter" style="padding-top: 100px;">
+                       <!-- newsletter -->
+<section class="newsletter">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -405,10 +406,10 @@
         <p class="mb-5">Receive updates, Events & Newsletters</p>
       </div>
       <div class="col-lg-8 col-sm-10 col-12 mx-auto">
-        <form action="#">
+        <form action="newsletter.php" method="post">
           <div class="input-wrapper position-relative">
-            <input type="email" class="newsletter-form" id="newsletter" placeholder="Enter your email">
-            <button type="submit" value="send" class="btn newsletter-btn">subscribe</button>
+            <input type="text" class="newsletter-form" id="newsletter" name="email" placeholder="Enter your email">
+            <button type="submit" value="send" class="btn newsletter-btn" name="submit">subscribe</button>
           </div>
         </form>
       </div>

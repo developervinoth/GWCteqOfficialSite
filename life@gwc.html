@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="zxx">
 
 <head>
@@ -53,8 +53,8 @@
               About Us
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" target="_blank" href="life@gwc.html">Life@GWC</a>
-              <a class="dropdown-item" target="_blan" href="about.html#team">Team</a>
+              <a class="dropdown-item"  href="life@gwc.html">Life@GWC</a>
+              <a class="dropdown-item" href="about.html#team">Team</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -62,8 +62,9 @@
               Partners
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" target="_blank" href="domo.html">DOMO</a>
-              <a class="dropdown-item" target="_blan" href="zoho-analytics.html">Zoho Analytics</a>
+              <a class="dropdown-item"  href="domo.html">DOMO</a>
+              <a class="dropdown-item" href="zoho-analytics.html">Zoho Analytics</a>
+              <a class="dropdown-item" href="snowflake.html">Snowflake</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -71,8 +72,8 @@
               Resourses
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" target="_blank" href="case-studies.html">Case Studies</a>
-              <a class="dropdown-item" target="_blan" href="blog.html">Blogs</a>
+              <a class="dropdown-item"  href="case-studies.html">Case Studies</a>
+              <a class="dropdown-item" href="blog.html">Blogs</a>
             </div>
           </li>
           <li class="nav-item">
@@ -168,9 +169,6 @@
 <!-- /service -->
 
 
-
-
-
 <!-- newsletter -->
 <section class="newsletter">
   <div class="container">
@@ -180,10 +178,10 @@
         <p class="mb-5">Receive updates, Events & Newsletters</p>
       </div>
       <div class="col-lg-8 col-sm-10 col-12 mx-auto">
-        <form action="#">
+        <form action="newsletter.php" method="post">
           <div class="input-wrapper position-relative">
-            <input type="email" class="newsletter-form" id="newsletter" placeholder="Enter your email">
-            <button type="submit" value="send" class="btn newsletter-btn">subscribe</button>
+            <input type="text" class="newsletter-form" id="newsletter" name="email" placeholder="Enter your email">
+            <button type="submit" value="send" class="btn newsletter-btn" name="submit">subscribe</button>
           </div>
         </form>
       </div>
@@ -193,6 +191,7 @@
   <img class="newsletter-bg-shape left-right-animation" src="images/background-shape/seo-ball-2.png" alt="background-shape">
 </section>
 <!-- /newsletter -->
+
 
 <!-- footer -->
 <footer class="footer-section footer" style="background-image: url(images/backgrounds/footer-bg.png);">
