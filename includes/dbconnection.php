@@ -1,9 +1,9 @@
 <?php 
 // DB credentials.
 define('DB_HOST','localhost');
-define('DB_USER','root');
-define('DB_PASS','123456');
-define('DB_NAME','gwc');
+define('DB_USER','u927690231_gwcteq_web_db');
+define('DB_PASS','RAJA5kavi#');
+define('DB_NAME','u927690231_gwcteq_web_db');
 // Establish database connection.
 try
 {

@@ -1433,10 +1433,6 @@ textarea.form-control {
             cursor: pointer;
         }
 
-
-
-
-
       
 .dropdown {
   position: relative;
@@ -1807,5 +1803,14 @@ a.job-list[data-toggle=collapse].collapsed:before {
 .gallery-section{
   margin-top: 150px;
   margin: 12px;
+}
+
+
+.team-member {
+    height: 450px;
+    padding: 30px 45px;
+    background: #fff;
+    box-shadow: 0px 23px 43px 0px rgb(172 189 199 / 49%);
+    margin: 0 20px;
 }
 
