@@ -3,8 +3,15 @@ include('includes/dbconnection.php');
 session_start();
 error_reporting(0);
 
-if(isset($_POST['submit']))
+if(isset($_POST['submit']) && $_POST['g-recaptcha-response'] != "")
   {
+
+
+    $secret = '6LcvlxgiAAAAAEJzBx_DG4Zd7laV_OXn6hGo0_dr';
+    $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $secret . '&response=' . $_POST['g-recaptcha-response']);
+    $responseData = json_decode($verifyResponse);
+    if ($responseData->success) {
+
   	$name=$_POST['name'];
     $email=$_POST['email'];
     $subject=$_POST['subject'];
@@ -31,7 +38,12 @@ echo "<script>window.location.href ='contact.html'</script>";
     } 
 
   
-
+  }
   
 }
+else
+    {
+         echo '<script>alert("Please Verify the Captcha again!")</script>';
+    } 
+
   ?>

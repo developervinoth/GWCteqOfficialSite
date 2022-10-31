@@ -1,9 +1,18 @@
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="zxx">
 
 <head>
   <meta charset="utf-8">
   <title>GWC</title>
+  
+<!-- Favicons -->
+  <link href="images/favicon.png" rel="icon">
+  <link href="images/favicon.png" rel="apple-touch-icon">
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,27 +20,103 @@
   
   <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css"  type="text/css">
   <!-- themefy-icon -->
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css"  type="text/css">
   <!-- slick slider -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css"  type="text/css">
   <!-- venobox popup -->
-  <link rel="stylesheet" href="plugins/Venobox/venobox.css">
+  <link rel="stylesheet" href="plugins/Venobox/venobox.css"  type="text/css">
   <!-- aos -->
-  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css"  type="text/css">
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
   <!-- Main Stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
-  
+  <link href="css/style.css" rel="stylesheet" >
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <!--Favicon-->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+<style>
+
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:10px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
+.float{
+	position:fixed;
+
+
+	bottom:40px;
+	left:0px;
+	/* background-color:#06C; */
+	color:#FFF;
+	/* border-radius:30px; */
+	text-align:center;
+	/* box-shadow: 2px 2px 3px #999; */
+  z-index: 2;
+  /* position: relative; */
+}
+
+.float p{
+  writing-mode:vertical-lr;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgba(53, 53, 53, 0.397);
+  color: black;
+}
+
+.my-float{
+	font-size:24px;
+	margin-top:18px;
+}
+
+a.float + div.label-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+
+a.float:hover + div.label-container{
+  visibility: visible;
+  opacity: 1;
+}
+
+</style>
+
+
 </head>
 
 <body>
-  
+
+
+ 
+
 
 <!-- navigation -->
 <section class="fixed-top navigation">
@@ -67,9 +152,12 @@
               <a class="dropdown-item" href="snowflake.html">Snowflake</a>
             </div>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://innovation.gwcteq.com/">Innovation Hub</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Resourses
+              Resources
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item"  href="case-studies.html">Case Studies</a>
@@ -83,23 +171,39 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact Us</a>
           </li>
+
         </ul>
-        <a href="contact.html" class="btn btn-primary ml-lg-1 primary-shadow">Let's Talk</a>
+        <!-- <a href="contact.html" class="btn btn-primary ml-lg-1 primary-shadow">Let's Talk</a> -->
       </div>
     </nav>
   </div>
 </section>
 <!-- /navigation -->
+<!-- <a style="padding:10px;display:block;" href="" target="_blank">Click here for complete tutorial</a> -->
 
+<!-- code begins here -->
+
+<!-- <a href="#" class="float mr-4">
+  <p>#Work From HomeTown</p> -->
+<!-- </a> -->
+<!-- <div class="label-container">
+<div class="label-text">Feedback</div>
+<i class="fa fa-play label-arrow"></i>
+</div> -->
+<!-- Code begins here -->
+
+<!-- <a href="#" class="float">
+<i class="fa fa-plus my-float"></i>
+</a> -->
 <!-- hero area -->
 <section class="hero-section hero" data-background="" style="background-image: url(images/hero-area/banner-bg.png);">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center zindex-1">
-        <h1 class="mb-3">Fuel Your Business Growth with<br>
-          Modern BI & Analytics</h1>
-        <p class="mb-4">We build strategic data analytics platforms helping businesses gain value from their data assets and 
-          extend their capabilities to truly data-driven decision making.</p>
+        <h2 class="mb-3">Uncover your Business's True Potential<br>
+         with Absolute Data Clarity in the Blink of an Eye.</h2>
+        <!-- <p class="mb-4">We build strategic data analytics platforms helping businesses gain value from their data assets and 
+          extend their capabilities to truly data-driven decision making.</p> -->
         <a href="contact.html" class="btn btn-secondary btn-lg">Let's Talk</a>
         <!-- banner image -->
         <img class="img-fluid w-100 banner-image" src="images/hero-area/banner-img.png" alt="banner-img">
@@ -133,8 +237,8 @@
         </div>
       </div>
       <div class="col-md-5">
-        <h3 class="section-title">GWC helps your business identify trends and opportunities, keep track of
-          KPI's, excel at data storytelling and streamline decision-making
+        <h3 class="section-title">Data is the digital era’s oil and gold.
+          <br> But without the right mining tools, even oil and gold are useless. Let GWC be your mining tool. 
         </h3>
         <!-- <p>Far far away, behind the word mountains, far
           from the countries Vokalia and Consonantia.<br>
@@ -159,8 +263,8 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-title">GWC Focal Tools</h2>
-        <p class="mb-100">Evaluate capabilities of top BI & Analytics platforms/tools</p>
+        <h2 class="section-title">Tools we use to Revolutionize your Business</h2>
+        <p class="mb-100">At GWC, we use reputed tools like</p>
       </div>
       <!-- feature item -->
       <div class="col-md-4 mb-80">
@@ -264,6 +368,19 @@
           </div>
         </div>
       </div>
+      
+      <!-- <div class="col-md-4 mb-80">
+        <div class="d-flex feature-item">
+          <div>
+            <i class="feature-icon mr-4"><img src="images/Icons/python.png" alt=""></i>
+          </div>
+          <div>
+            <h4>Python</h4>
+            <a href="python.html">Learn More </a>
+          </div>
+        </div>
+      </div> -->
+
 
     </div>
   </div>
@@ -354,7 +471,7 @@
   <div class="container">
       <div class="row">
           <div class="col-12 text-center">
-              <h2 class="section-title">Client Testimonials</h2>
+              <h3 class="section-title">We’ve Helped Businesses Realize their ROI and Efficiency Goals. Don’t Believe It? Hear it from our Clients</h3>
               <p class="mb-100"></p>
           </div>
           <!-- service item -->
@@ -502,7 +619,7 @@
             <a class="twitter" href="#"><i class="ti-twitter-alt"></i></a>
           </li>
           <li class="list-inline-item bottom-border">
-            <a class="linkedin" href="#"><i class="ti-linkedin"></i></a>
+            <a class="linkedin" href="https://www.linkedin.com/company/global-weconnect-technologies"><i class="ti-linkedin"></i></a>
           </li>
           <li class="list-inline-item bottom-border">
             <a class="instagram" href="#"><i class="ti-instagram"></i></a>
@@ -517,7 +634,49 @@
   </div>
 </footer>
 <!-- /footer -->
+<script>
+  const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
 
+const textArray = [" is my bff", " is an amazing coder", " is a sweet, brilliant,kind, loving, compassionate girl!", " ,I am missing you a lot please come back with lots of love from Sree"];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+if (charIndex < textArray[textArrayIndex].length) {
+  if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+  typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+  charIndex++;
+  setTimeout(type, typingDelay);
+} 
+else {
+  cursorSpan.classList.remove("typing");
+  setTimeout(erase, newTextDelay);
+}
+}
+
+function erase() {
+if (charIndex > 0) {
+  if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+  typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+  charIndex--;
+  setTimeout(erase, erasingDelay);
+} 
+else {
+  cursorSpan.classList.remove("typing");
+  textArrayIndex++;
+  if(textArrayIndex>=textArray.length) textArrayIndex=0;
+  setTimeout(type, typingDelay + 1100);
+}
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+</script> 
 <!-- jQuery -->
 <script src="plugins/jQuery/jquery.min.js"></script>
 <!-- Bootstrap JS -->
